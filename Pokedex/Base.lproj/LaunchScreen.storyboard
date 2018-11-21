@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iFc-oq-BBn">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="rmn-ll-iL3">
+            <objects>
+                <viewController id="iFc-oq-BBn" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OGN-6i-tDm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pokeball" translatesAutoresizingMaskIntoConstraints="NO" id="6Vt-41-wc1">
+                                <rect key="frame" x="62" y="233" width="290" height="290"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="6Vt-41-wc1" secondAttribute="height" multiplier="1:1" id="L0h-iR-bwv"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pokedex" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gux-B0-M7v">
+                                <rect key="frame" x="98.666666666666686" y="99.666666666666686" width="217" height="65"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="55"/>
+                                <color key="textColor" red="0.99613755941390991" green="0.78527766466140747" blue="0.023380806669592857" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.21980124711990356" green="0.37970024347305298" blue="0.69880342483520508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.046548016369342804" green="0.29949355125427246" blue="0.62820827960968018" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gux-B0-M7v" firstAttribute="centerY" secondItem="pL2-9v-fYG" secondAttribute="centerY" multiplier="0.3" id="6kS-4E-mrS"/>
+                            <constraint firstItem="gux-B0-M7v" firstAttribute="centerY" secondItem="pL2-9v-fYG" secondAttribute="centerY" multiplier="0.35" id="9aP-Mv-a3Q"/>
+                            <constraint firstItem="6Vt-41-wc1" firstAttribute="centerX" secondItem="pL2-9v-fYG" secondAttribute="centerX" id="Czr-DM-qo1"/>
+                            <constraint firstItem="6Vt-41-wc1" firstAttribute="width" secondItem="OGN-6i-tDm" secondAttribute="width" multiplier="0.7" id="LzO-Ha-yLh"/>
+                            <constraint firstItem="6Vt-41-wc1" firstAttribute="width" secondItem="OGN-6i-tDm" secondAttribute="width" multiplier="0.35" id="OYx-td-yEL"/>
+                            <constraint firstItem="gux-B0-M7v" firstAttribute="centerX" secondItem="pL2-9v-fYG" secondAttribute="centerX" id="XGh-hk-Yjg"/>
+                            <constraint firstItem="6Vt-41-wc1" firstAttribute="centerY" secondItem="pL2-9v-fYG" secondAttribute="centerY" id="YVt-ca-hEg"/>
+                            <constraint firstItem="6Vt-41-wc1" firstAttribute="centerY" secondItem="pL2-9v-fYG" secondAttribute="centerY" multiplier="1.2" id="rad-uP-oTf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pL2-9v-fYG"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="OYx-td-yEL"/>
+                                <exclude reference="rad-uP-oTf"/>
+                                <exclude reference="6kS-4E-mrS"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="LzO-Ha-yLh"/>
+                                <include reference="OYx-td-yEL"/>
+                                <exclude reference="YVt-ca-hEg"/>
+                                <include reference="rad-uP-oTf"/>
+                                <include reference="6kS-4E-mrS"/>
+                                <exclude reference="9aP-Mv-a3Q"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kxz-jk-OTS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2116" y="-525"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pokeball" width="163" height="163"/>
+    </resources>
+</document>
